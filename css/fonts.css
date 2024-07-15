@@ -1,0 +1,14 @@
+:root {
+    /* Font family */
+    --rubik: 'Rubik', sans-serif;
+
+    /* Font weights */
+    --regular: 400;
+    --light: 300;
+
+    /* Line heights */
+    --body-small: 1.125rem;
+    --title-large: 1.75rem;
+    --body-medium: 1.313rem;
+    --headline-medium: 2.375rem;
+}
