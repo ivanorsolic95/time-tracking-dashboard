@@ -14,10 +14,22 @@ fetch('/data.json').then((request) => {
                 const currentTimeSpan = card.querySelector('.current-time');
                 const previousTimeSpan = card.querySelector('.previous-time');
 
-                if (currentTimeSpan && previousTimeSpan) {
+                if (currentTimeSpan && previousTimeSpan && timeframe === 'daily') {
+                    currentTimeSpan.innerHTML = `${report.timeframes[timeframe].current}hrs`;
+                    previousTimeSpan.innerHTML = `Yesterday - ${report.timeframes[timeframe].previous}hrs`;
+                }
+
+                if (currentTimeSpan && previousTimeSpan && timeframe === 'weekly') {
                     currentTimeSpan.innerHTML = `${report.timeframes[timeframe].current}hrs`;
                     previousTimeSpan.innerHTML = `Last week - ${report.timeframes[timeframe].previous}hrs`;
                 }
+
+                if (currentTimeSpan && previousTimeSpan && timeframe === 'monthly') {
+                    currentTimeSpan.innerHTML = `${report.timeframes[timeframe].current}hrs`;
+                    previousTimeSpan.innerHTML = `Last month - ${report.timeframes[timeframe].previous}hrs`;
+                }
+
+
             }
         });
     };
