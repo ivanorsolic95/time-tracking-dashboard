@@ -3,6 +3,7 @@
     --rubik: 'Rubik', sans-serif;
 
     /* Font weights */
+    --medium: 500;
     --regular: 400;
     --light: 300;
 
@@ -11,4 +12,6 @@
     --title-large: 1.75rem;
     --body-medium: 1.313rem;
     --headline-medium: 2.375rem;
+    --display-small: 2.938rem;
+    --display-large: 4.125rem;
 }
